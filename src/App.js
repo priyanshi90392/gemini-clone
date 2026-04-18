@@ -213,7 +213,7 @@ function App() {
     const firstUserMessage = firstUserMsgObj?.text ?? firstUserMsgObj?.content ?? firstUserMsgObj?.text ?? null;
     if (!firstUserMessage) return 'New Chat';
     try {
-      const genAI = new GoogleGenerativeAI("AIzaSyDkeJJpTY7YRucjjyI1tzWRS4dcpDjYjG0");
+      const genAI = new GoogleGenerativeAI(process.env.REACT_APP_API);
       const genModel = genAI.getGenerativeModel({ model: selectedModel });
       const prompt = `Generate a very short title (3-4 words max) for this conversation starter: "${firstUserMessage}"`;
       const result = await genModel.generateContent(prompt);
