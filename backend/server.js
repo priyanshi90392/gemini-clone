@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-    origin: process.env.CLIENT_URL || 'https://gemini-girdhar.netlify.app',
+    origin: process.env.CLIENT_URL || 'https://gemini-clone-sepia-seven-13.vercel.app',
     credentials: true
 }));
 

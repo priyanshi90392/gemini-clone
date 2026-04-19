@@ -46,7 +46,7 @@ REACT_APP_ENVIRONMENT=development
 MONGODB_URI=mongodb://localhost:27017/geminiclone
 JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
 PORT=5000
-CLIENT_URL=https://gemini-girdhar.netlify.app
+CLIENT_URL=https://gemini-clone-sepia-seven-13.vercel.app/
 NODE_ENV=development
 ```
 
