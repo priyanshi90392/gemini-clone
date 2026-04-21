@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 require('../config/passport'); // make sure passport strategy is registered
 
 const router = express.Router();
-const CLIENT_URL = process.env.CLIENT_URL || 'https://gemini-clone-sepia-seven-13.vercel.app';
+const CLIENT_URL = process.env.CLIENT_URL || 'https://gemini-girdhar.netlify.app';
 
 // Start Google OAuth
 router.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
